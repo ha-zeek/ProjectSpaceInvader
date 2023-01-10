@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "SpaceInvader";
+  src: url(./fonts/SF\ Pixelate\ Shaded.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Score";
+  src: url(./fonts/VCR_OSD_MONO_1.001.ttf);
+  font-weight: normal;
+}
+
+body {
+  color: white;
+}
+
+h1 {
+  font-family: "SpaceInvader";
+  font-style: italic;
+  text-align: center;
+  font-size: 4em;
+}
+
+h2 {
+  font-family: "Score";
+  text-align: center;
+}
+
+.background {
+  background-image: url(./images/space.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+#button {
+  background-color: white;
+  color: black;
+  font-family: "Score";
+  font-size: 1.2em;
+  border-radius: 10px;
+  min-height: 30px;
+  min-width: 95px;
+}
+
+#button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.7s;
+}
+
+#button:active {
+  background-color: greenyellow;
+}
+
+#start {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%);
+}
+
+#game-won {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+#game-over {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+.grid {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border: solid white 1px;
+  flex-wrap: wrap;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.grid div {
+  width: 25px;
+  height: 25px;
+}
+
+.invader {
+  background-image: url(./images/rawalien_2_22x22.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ship {
+  border-radius: 5px;
+  background-image: url(./images/shipblack_22x22.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.laser {
+  background-image: url(./images/bullet_1_10x10.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boom {
+  background-image: url(./images/boom_20x20.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

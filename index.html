@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Invader?</title>
+    <script defer src="app.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body class="background">
+    <h1>SPACE INVADERS</h1>
+    <h2 class="results">Score:</h2>
+    <div class="grid" style="display: none"></div>
+    <div id="start" style="display: block">
+      <button id="button" onclick="startGame()">START</button>
+    </div>
+    <div id="game-won" style="display: none">
+      <button id="button" onclick="restartGame()">PLAY AGAIN</button>
+    </div>
+    <div id="game-over" style="display: none">
+      <button id="button" onclick="restartGame()">RESTART</button>
+    </div>
+  </body>
+</html>
